@@ -1,6 +1,9 @@
-function rollDie(sides) {
+function generateResult(sides) {
     return Math.floor(Math.random() * (sides - 1 + 1) + 1)
 }
 
-console.log(rollDie(6))
-console.log(rollDie(10))
+function rollDie(sides) {
+    let result = generateResult(sides)
+
+    document.getElementById('result').innerText = result
+}
