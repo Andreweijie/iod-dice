@@ -1,18 +1,19 @@
 <html>
-    <head>
-        <title>
-            Dice Generator
-        </title>
-        <link rel="stylesheet" href="/styles/styles.css">
-    </head>
-    <body>
-        <h1>Dice Generator</h1>
-        <h2>Result:</h2>
-        <h3 id="result"></h3>
-        <div class="roll-btns">
-            <button onClick="rollDie(6)">Roll 6 Sided</button>
-            <button onClick="rollDie(10)">Roll 10 Sided</button>
-        </div>
-        <script src="/js/index.js"></script>
-    </body>
+  <head>
+    <title>Dice Generator</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <h1>Dice Generator</h1>
+    <h2>Result:</h2>
+    <h1 id="result"></h1>
+    <div class="roll-btns">
+      <select name="numberOfSides" id="numberOfSides">
+        <option value="6">6</option>
+        <option value="10">10</option>
+      </select>
+      <button onClick="rollDie()">Roll Die</button>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
